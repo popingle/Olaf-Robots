@@ -1,0 +1,11 @@
+__pycache__/
+gym/logs/*
+*.pkl
+Olaf_Robots/Olaf_Robots.egg-info/*
+experiments/RL/data/*
+experiments/RL/new/logs/
+experiments/RL/new/sac/
+experiments/RL/new/ppo/
+*.zip
+*.txt
+*.onnx
