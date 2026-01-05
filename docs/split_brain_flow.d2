@@ -1,0 +1,56 @@
+direction: right
+
+Locomotion Brain (Pi Zero 2W): {
+  style: {
+    stroke: "#007BFF"
+    fill: "#E3F2FD"
+    stroke-width: 2
+  }
+  
+  RL: RL Walking Policy
+  IMU: IMU Sensor Data
+  Gait: Gait State Machine
+  Balance: Balance Correction
+  Servos: Leg Servo Control (10 DOF)
+
+  IMU -> Balance
+  RL -> Gait
+  Gait -> Balance
+  Balance -> Servos
+}
+
+Expression Brain (ESP32-S3): {
+  style: {
+    stroke: "#FF8C00"
+    fill: "#FFF3E0"
+    stroke-width: 2
+  }
+  
+  Personality: Personality Engine
+  LED: Dual LED Eye Displays (SPI)
+  Audio: I2S Audio Output
+  Head: Head Servo Actuation (PWM)
+  Driver: 2N2222 Driver Stage
+
+  Personality -> LED
+  Personality -> Audio
+  Personality -> Head
+  Head -> Driver
+}
+
+Locomotion Brain (Pi Zero 2W) <-> Expression Brain (ESP32-S3): Serial Bus (UART) {
+  style: {
+    stroke-dash: 5
+    stroke: "#333"
+  }
+}
+
+Physical Actuation: {
+  shape: cylinder
+  style: {
+    fill: "#F5F5F5"
+  }
+}
+
+Locomotion Brain (Pi Zero 2W).Servos -> Physical Actuation
+Expression Brain (ESP32-S3).Driver -> Physical Actuation
