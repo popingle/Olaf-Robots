@@ -6,13 +6,10 @@
   <code>CA: 8VQBFtkZykbxnAcVzT8jgs7KLcgF5LdByMdna3Dhpump</code>
 </p>
 
-<p align="center">
-  <img src="docs/logo.png" width="200" alt="Olaf Robotics Logo">
-</p>
 
 **Olaf Robotics** is an open-source project dedicated to bringing an animated character to life in the physical world. Our goal is to provide a compact, scale-accurate, and highly expressive robotic platform based on the Olaf character, as detailed in the research paper *"Olaf: Bringing an Animated Character to Life in the Physical World"*.
 
-![Olaf Robotics Banner](docs/banner.png)
+![Olaf Robotics Banner](media/p2.jpeg)
 
 ---
 
@@ -27,6 +24,14 @@
 ## Overview
 
 Olaf Robotics is a miniaturized, self-walking robotic character designed for agility and believability. This repository contains the mechatronic design (3D printable parts), high-fidelity simulation environments, and reinforcement learning-based control software.
+
+<table align="center">
+  <tr>
+    <td align="center"><img src="media/p1.jpeg" width="300px" alt="Olaf Robot 1"></td>
+    <td align="center"><img src="media/v1.gif" width="300px" alt="Olaf Animation 1"></td>
+    <td align="center"><img src="media/v2.gif" width="300px" alt="Olaf Animation 2"></td>
+  </tr>
+</table>
 
 ### 🏗️ Technical Architecture
 
