@@ -1,9 +1,9 @@
 # Olaf Robotics
 
 <p align="center">
-  <a href="https://x.com/OlafRobotics"><img src="https://img.shields.io/twitter/follow/OlafRobotics?style=social" alt="X Follow"></a>
+  <a href="https://x.com/olafrobots"><img src="https://img.shields.io/twitter/follow/OlafRobotics?style=social" alt="X Follow"></a>
   <br>
-  <code>CA: 8VQBFtkZykbxnAcVzT8jgs7KLcgF5LdByMdna3Dhpump</code>
+  <code></code>
 </p>
 
 
