@@ -54,6 +54,18 @@ The robot's internal structure is meticulously designed to balance weight, power
     - **Jaw Linkage**: Precise linkage for expressive mouth movements.
     - **Shoulder Linkage**: Revolute joint axes (red/green) for fluid arm motion.
 
+### 🤖 RL-based Control
+
+We separate the articulated backbone from the show functions. The backbone is controlled via policies conditioned on the high-level control input `gt` and trained using a combination of imitation, overheating, and impact rewards. During training, the control inputs are randomized, whereas at runtime, the Animation Engine generates control inputs from puppeteering commands.
+
+![Mechatronic Design and RL-based Control](docs/mechatronic_design_rl_control.jpg)
+
+#### Thermal-aware Policy Performance
+
+Our thermal-aware policy effectively prevents actuator overheating, as demonstrated by the comparison below. The policy significantly reduces joint error and torque when operating under thermal constraints.
+
+![Thermal Reward Performance](docs/thermal_reward_performance.jpeg)
+
 1.  **Mechatronic Design**:
     *   Novel asymmetric **six-degrees-of-freedom (6-DoF)** leg mechanism.
     *   Remotely actuated spherical, planar, and spatial linkages for arms, mouth, and eyes.
@@ -90,6 +102,18 @@ Struktur internal robot dirancang secara presisi untuk menyeimbangkan berat, day
 - **Komputasi (Ungu)**: Sistem dual-brain menggunakan **Jetson Computer** dan **Raspberry Pi**.
 - **Mekanisme Khusus**: Kontrol mata 3-DoF, linkage rahang untuk mulut, dan linkage bahu untuk gerakan lengan yang luwes.
 
+### 🤖 Kontrol Berbasis RL
+
+Kami memisahkan *articulated backbone* dari fungsi pertunjukan. *Backbone* dikendalikan melalui kebijakan yang dikondisikan pada input kontrol tingkat tinggi `gt` dan dilatih menggunakan kombinasi imitasi, *overheating*, dan *impact rewards*. Selama pelatihan, input kontrol diacak, sedangkan saat runtime, *Animation Engine* menghasilkan input kontrol dari perintah *puppeteering*.
+
+![Mechatronic Design and RL-based Control](docs/mechatronic_design_rl_control.jpg)
+
+#### Performa Kebijakan Sadar Termal
+
+Kebijakan sadar termal kami secara efektif mencegah *overheating* aktuator, seperti yang ditunjukkan oleh perbandingan di bawah ini. Kebijakan ini secara signifikan mengurangi kesalahan sendi dan torsi saat beroperasi di bawah batasan termal.
+
+![Thermal Reward Performance](docs/thermal_reward_performance.jpeg)
+
 1.  **Desain Mekatronik**: Mekanisme kaki 6-DoF asimetris yang inovatif dan linkage untuk lengan, mulut, dan mata.
 2.  **Lapisan Kontrol**: Kebijakan Reinforcement Learning (RL) yang dipandu oleh referensi animasi dan kebijakan sadar termal untuk mencegah overheating.
 3.  **Lapisan Simulasi**: Simulasi fisika fidelitas tinggi menggunakan MuJoCo.
@@ -110,6 +134,18 @@ Olaf Robotics 是一个开源机器人项目，旨在将动画角色带入现实
 - **执行器（黄色）**：高性能 Dynamixel 和 Unitree 电机。
 - **计算单元（紫色）**：搭载 **Jetson** 和 **Raspberry Pi** 的双大脑系统。
 - **专用机构**：3自由度眼睛机构、用于表情的下颌连杆以及用于流畅手臂动作的肩部连杆。
+
+### 🤖 基于RL的控制
+
+我们将关节骨架与表演功能分离。骨架通过以高级控制输入 `gt` 为条件的策略进行控制，并使用模仿、过热和冲击奖励的组合进行训练。在训练期间，控制输入是随机的，而在运行时，动画引擎从操纵命令生成控制输入。
+
+![Mechatronic Design and RL-based Control](docs/mechatronic_design_rl_control.jpg)
+
+#### 热感知策略性能
+
+我们的热感知策略有效地防止了执行器过热，如下面的比较所示。该策略在热限制下显著降低了关节误差和扭矩。
+
+![Thermal Reward Performance](docs/thermal_reward_performance.jpeg)
 
 1.  **机电设计**：创新的非对称六自由度 (6-DoF) 腿部机构，以及用于手臂、嘴巴和眼睛的远程驱动连杆。
 2.  **控制层**：由动画参考引导的强化学习 (RL) 策略，以及包含执行器温度输入的散热感知策略。
