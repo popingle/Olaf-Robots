@@ -66,6 +66,12 @@ Our thermal-aware policy effectively prevents actuator overheating, as demonstra
 
 ![Thermal Reward Performance](docs/thermal_reward_performance.jpeg)
 
+#### Impact Reduction Performance
+
+To ensure quieter and more believable movement, our RL policies incorporate impact noise reduction rewards. The graph below illustrates how this approach minimizes impact forces during locomotion.
+
+![Impact Reduction Performance](docs/impact_reduction_performance.jpeg)
+
 1.  **Mechatronic Design**:
     *   Novel asymmetric **six-degrees-of-freedom (6-DoF)** leg mechanism.
     *   Remotely actuated spherical, planar, and spatial linkages for arms, mouth, and eyes.
@@ -114,6 +120,12 @@ Kebijakan sadar termal kami secara efektif mencegah *overheating* aktuator, sepe
 
 ![Thermal Reward Performance](docs/thermal_reward_performance.jpeg)
 
+#### Performa Pengurangan Dampak
+
+Untuk memastikan gerakan yang lebih tenang dan meyakinkan, kebijakan RL kami menggabungkan *reward* pengurangan kebisingan dampak. Grafik di bawah ini mengilustrasikan bagaimana pendekatan ini meminimalkan gaya dampak selama lokomosi.
+
+![Impact Reduction Performance](docs/impact_reduction_performance.jpeg)
+
 1.  **Desain Mekatronik**: Mekanisme kaki 6-DoF asimetris yang inovatif dan linkage untuk lengan, mulut, dan mata.
 2.  **Lapisan Kontrol**: Kebijakan Reinforcement Learning (RL) yang dipandu oleh referensi animasi dan kebijakan sadar termal untuk mencegah overheating.
 3.  **Lapisan Simulasi**: Simulasi fisika fidelitas tinggi menggunakan MuJoCo.
@@ -146,6 +158,12 @@ Olaf Robotics 是一个开源机器人项目，旨在将动画角色带入现实
 我们的热感知策略有效地防止了执行器过热，如下面的比较所示。该策略在热限制下显著降低了关节误差和扭矩。
 
 ![Thermal Reward Performance](docs/thermal_reward_performance.jpeg)
+
+#### 冲击减少性能
+
+为了确保更安静、更逼真的运动，我们的强化学习策略结合了冲击噪声减少奖励。下图说明了这种方法如何在运动过程中最大限度地减少冲击力。
+
+![Impact Reduction Performance](docs/impact_reduction_performance.jpeg)
 
 1.  **机电设计**：创新的非对称六自由度 (6-DoF) 腿部机构，以及用于手臂、嘴巴和眼睛的远程驱动连杆。
 2.  **控制层**：由动画参考引导的强化学习 (RL) 策略，以及包含执行器温度输入的散热感知策略。
