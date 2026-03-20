@@ -29,7 +29,6 @@ Olaf Robotics is a miniaturized, self-walking robotic character designed for agi
   <tr>
     <td align="center"><img src="media/p1.jpeg" width="300px" alt="Olaf Robot 1"></td>
     <td align="center"><img src="media/v1.gif" width="300px" alt="Olaf Animation 1"></td>
-    <td align="center"><img src="media/v2.gif" width="300px" alt="Olaf Animation 2"></td>
   </tr>
 </table>
 
